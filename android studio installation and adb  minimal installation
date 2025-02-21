@@ -1,0 +1,62 @@
+# Android Studio and ADB Installation Guide
+
+## 📌 Android Studio Installation
+
+### 1️⃣ Download Android Studio  
+- Visit the [official Android Studio website](https://developer.android.com/studio).
+- Download the latest version for your operating system.
+
+### 2️⃣ Run the Installer  
+- Open the downloaded file and follow the setup wizard instructions.
+- Choose the recommended settings and proceed with installation.
+
+### 3️⃣ Install Necessary SDK Components  
+- Launch Android Studio and open the **SDK Manager**.
+- Install required SDK components like:
+  - **Android SDK**
+  - **Platform Tools**
+  - **Emulator** (if needed)
+
+### 4️⃣ Configure System Environment Variables (if needed)  
+- **Windows users**: Add the SDK and platform-tools path to the **System Environment Variables** if not automatically set.
+
+### 5️⃣ Verify Installation  
+- Open **Android Studio** and create a sample project to ensure everything works correctly.
+
+---
+
+## 📌 Minimal ADB and Fastboot Installation
+
+### 1️⃣ Download Minimal ADB and Fastboot  
+- Get the latest version from an official source, such as:
+  - [XDA Developers](https://forum.xda-developers.com/)
+  - Other trusted websites.
+
+### 2️⃣ Install Minimal ADB  
+- Run the setup file and follow the installation steps.
+- Choose a suitable installation directory.
+
+### 3️⃣ Open ADB Command Prompt  
+- Navigate to the installed directory.
+- Open a command prompt in that directory and verify ADB is installed using:  
+  ```sh
+  adb version
+
+📌 Enable USB Debugging on Your Android Device
+
+Open Settings on your Android device.
+Navigate to About Phone and tap Build Number seven times to enable Developer Options.
+Go to Developer Options and enable USB Debugging.
+
+📌 Connect and Verify ADB
+
+Connect your Android device to the computer using a USB cable.
+Open a command prompt in the ADB directory and run:
+sh
+Copy
+Edit
+adb devices
+If prompted, allow USB debugging on your device.
+The device should appear in the list. If not, check drivers and reconnect.
+
+
